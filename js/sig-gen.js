@@ -1,4 +1,3 @@
-$(document).foundation();
 $(document).ready(function () {
     $('#generator-form input').change(function () {
         updateSignature();
