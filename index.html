@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signature Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script type="text/javascript" src="./js/sig-gen.js"></script>
+</head>
+<body>
+<div class="row">
+    <div class="large-12 columns">
+        <h3>Signature Generator</h3>
+        <hr/>
+    </div>
+    <div class="large-6 medium-6 columns">
+        <div id="generator-form" class="callout primary">
+            <h4 class="subheader">Generator</h4>
+            <label>Name <input name="name" type="text" value="John Doe"/></label>
+            <label>Title <input name="title" type="text" value="Captain Awesome"/></label>
+            <label>Phone
+                <div class="row">
+                    <div class="large-3 medium-3 small-3 columns">
+                        <input name="phone1" type="text" value="789"/>
+                    </div>
+                    <div class="large-3 medium-3 small-3 columns">
+                        <input name="phone2" type="text" value="333"/>
+                    </div>
+                    <div class="large-4 medium-6 small-6 columns">
+                        <input name="phone3" type="text" value="4444"/>
+                    </div>
+                    <div class="large-2 columns"></div>
+                </div>
+            </label>
+            <label>Cell
+                <div class="row">
+                    <div class="large-3 medium-3 small-3 columns">
+                        <input name="cell1" type="text" value="789"/>
+                    </div>
+                    <div class="large-3 medium-3 small-3 columns">
+                        <input name="cell2" type="text" value="333"/>
+                    </div>
+                    <div class="large-4 medium-6 small-6 columns">
+                        <input name="cell3" type="text" value="4444"/>
+                    </div>
+                    <div class="large-2 columns"></div>
+                </div>
+            </label>
+            <label>Email <input name="email" type="text" value="adam@codingsimply.com"/></label>
+            <label>Link <input name="link" type="text" value="https://codingsimply.com/"/></label>
+            <label>Logo <input name="logo" type="text" value="https://pbs.twimg.com/profile_images/826869820285071361/b8_5untt_400x400.jpg"/></label>
+        </div>
+    </div>
+    <div class="large-6 medium-6 columns">
+        <div class="callout secondary">
+            <div class="row">
+                <div class="large-6 medium-6 small-6 columns">
+                    <h4 class="subheader">Output</h4>
+                </div>
+                <div class="large-6 medium-6 small-6 columns text-right">
+                    <a id="copy-sig" class="button small" data-clipboard-target="#output">copy</a>
+                </div>
+            </div>
+        </div>
+        <div class="callout">
+            <div id="output"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
